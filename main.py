@@ -48,6 +48,7 @@ def join(meeting_id):
     query_dict = {
         'fullName': request.args.get('full_name', ''),
         'password': request.args.get('password', ''),
+        'meetingID': meeting_id
     }
 
     if not query_dict['fullName'] or not query_dict['password']:
