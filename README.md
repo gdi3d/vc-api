@@ -72,4 +72,4 @@ Si la operación es exitosa se obtendra la siguiente respuesta:
   "message": "You need to send the user's full name and password to join the room",
   "result": "FAIL"
 }
-``
+```
