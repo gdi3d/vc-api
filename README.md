@@ -9,7 +9,7 @@ El usuario final nunca deberá ni podrá tener acceso a esta API. Todas las llam
 En esta primera beta no hay un mecanismo de autenticacion para validar las llamadas remotas. Solamente se limitaran por la IP del servidor que hace el request.
 
 # Configuraciones:
-Dentro del archivo `settings.php`
+Dentro del archivo `settings.py`
 
 ## Crear una sala
 
