@@ -10,6 +10,10 @@ import json
 app = Flask(__name__)
 app.wsgi_app = middleware.Auth(app.wsgi_app)
 
+@app.route("/hi")
+def hi():
+    return 'hi!'
+
 @app.route("/create")
 def create():
     """
@@ -46,7 +50,7 @@ def join(meeting_id):
     """
 
     query_dict = {
-        'fullName': request.args.get('full_name', ''),
+        'fullName': request.args.get('full_name', '').encode('utf-8'),
         'password': request.args.get('password', ''),
         'meetingID': meeting_id
     }
